@@ -3,7 +3,7 @@ PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
 #Change time 20160214 22:40 by Mr.nando
-#Use 4	create a simple shadowsocks server
+#Use for create a simple shadowsocks server
 #DEFINE Variables and function
 ETCJSON=/etc/shadowsocks.json
 IPTABLES=/etc/sysconfig/iptables
@@ -106,5 +106,5 @@ if [ $? != 0 ];then
 fi
 
 ssserver -c /etc/shadowsocks.json -d restart
-echo -e "\nusage: ssserver -c /etc/shadowsocks.json -d start\nPS: if the config not exists, U can use...\nssserver -p $SERVERPORT -k "your password" -m $METHOD -d start|restart\nShadowsocks is working, Bye."
+echo -e "\nUsage: ssserver -c /etc/shadowsocks.json -d start\nPS: if the config file not exists, U can use...\nssserver -p $SERVERPORT -k "your password" -m $METHOD -d start|restart\nShadowsocks is working, Bye."
 
