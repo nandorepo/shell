@@ -1,2 +1,2 @@
-# shell
-My daily using shell script 
+## shell
+- My daily using shell script.
