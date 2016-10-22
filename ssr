@@ -1,0 +1,23 @@
+#!/bin/bash
+
+DAEMON=/usr/bin/ssserver
+CONFIG=/etc/shadowsocks.json
+
+case $1 in
+    start)
+        echo "Starting Shadowsocks..."
+        $DAEMON -c $CONFIG -d start
+    ;;
+    stop)
+        echo "Stopping Shadowsocks..."
+        $DAEMON -c $CONFIG -d stop
+    ;;
+    restart)
+        echo "Restarting Shadowsocks..."
+        $DAEMON -c $CONFIG -d restart
+    ;;	
+    *)
+        echo "Usage: $0 {start|stop|restart}"
+        exit 1
+    ;;
+esac
