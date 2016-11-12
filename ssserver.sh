@@ -80,8 +80,9 @@ case $KEY in
         METHOD=aes-256-cfb
         echo "encryption method is aes-256-cfb."
     ;;
-        echo "the other method, please edit $ETCJSON manually."
     *) 
+        echo "the other method, please edit $ETCJSON manually."
+    ;;
 esac
 
 #Step 3. create config file(include iptables) and start ssserver
