@@ -49,7 +49,7 @@ EOF
 }
 
 #Step 1. yum install shadowsocks
-yum install python-setuptools && easy_install pip
+yum -y install python-setuptools && easy_install pip
 if [ $? -eq 0 ];then
     pip install shadowsocks
     if [ $? -eq 0 ];then
